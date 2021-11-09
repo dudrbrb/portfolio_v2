@@ -140,6 +140,14 @@ section#Introduce article .title {
   margin-bottom: 80px;
 }
 
+section#Introduce article .fl1 {
+  width: 100px;
+  left: -50px;
+  top: -40px;
+  position: absolute;
+  z-index: -1;
+}
+
 section#Introduce article div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -172,13 +180,6 @@ section#Introduce article img.bg {
   width: 660px;
 }
 
-section#Introduce article img.fl1 {
-  z-index: 2;
-  width: 100px;
-  left: 100px;
-  top: 80px;
-}
-
 section#Introduce article img.fl2 {
   z-index: 2;
   width: 170px;
@@ -190,7 +191,6 @@ section#Introduce article .profil {
   width: 350px;
   height: 500px;
   background-color: white;
-  border: 1px solid #685858;
   position: relative;
   z-index: 1;
   margin-left: 160px;

@@ -97,6 +97,13 @@ section{
             .title{
                 text-align: left;
                 margin-bottom: 80px;
+            }    
+            .fl1{
+                width: 100px;
+                left: -50px;
+                top: -40px;
+                position: absolute;
+                z-index: -1;
             }
             div{
                 display: flex;
@@ -110,6 +117,7 @@ section{
                 p{
                     font-weight: 300;
                 }
+            
             }
             img{
                 position: absolute;
@@ -117,12 +125,6 @@ section{
                     top: -80px;
                     right: -20px;
                     width: 660px;
-                }
-                &.fl1{
-                    z-index: 2;
-                    width: 100px;
-                    left: 100px;
-                    top: 80px;
                 }
                 &.fl2{
                     z-index: 2;
@@ -135,7 +137,7 @@ section{
                 width: 350px;
                 height: 500px;
                 background-color: white;
-                border: 1px solid #685858;
+                // border: 1px solid #685858;
                 position: relative;
                 z-index: 1;
                 margin-left: 160px;
