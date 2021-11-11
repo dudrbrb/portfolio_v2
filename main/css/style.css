@@ -14,9 +14,6 @@ section {
   font-weight: 200;
   font-size: 1.1rem;
   color: #685858;
-  -ms-scroll-snap-type: block;
-      scroll-snap-type: block;
-  scroll-snap-align: start;
 }
 
 section article {
@@ -35,6 +32,10 @@ section .title {
   font-size: 2rem;
   font-weight: 500;
   text-align: center;
+}
+
+section#Main {
+  overflow: hidden;
 }
 
 section#Main article {
@@ -59,6 +60,11 @@ section#Main article h1 {
   font-weight: 200;
   line-height: 5.2rem;
   margin: 0 auto;
+  -webkit-transform: translate(0, 100px);
+          transform: translate(0, 100px);
+  opacity: 0;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
 }
 
 section#Main article nav {
@@ -93,34 +99,57 @@ section#Main article nav ul li:hover {
 section#Main img {
   position: absolute;
   z-index: -1;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
 }
 
 section#Main img.bg1 {
   right: 0;
   top: -300px;
+  -webkit-transform: translate(15px, -80px);
+          transform: translate(15px, -80px);
+  -webkit-transition: all 3s;
+  transition: all 3s;
+  width: 40%;
+  min-width: 540px;
 }
 
 section#Main img.bg2 {
   left: 40px;
   bottom: 60px;
+  -webkit-transform: translate(-20px, -30px) rotate(40deg);
+          transform: translate(-20px, -30px) rotate(40deg);
+  opacity: 0;
+  width: 17%;
+  min-width: 250px;
 }
 
 section#Main img.bg3 {
   left: 100px;
   bottom: 150px;
+  clip: rect(0px, 0px, 200px, 0px);
+  width: 32%;
+  min-width: 300px;
 }
 
 section#Main img.fl1 {
   margin: -150px 560px 0 0;
   width: 70px;
+  clip: rect(0, 200px, 0, 0px);
 }
 
 section#Main img.fl2 {
   margin: 90px 0 0 480px;
   width: 60px;
+  -webkit-transform: scale(0) rotate(100deg);
+          transform: scale(0) rotate(100deg);
 }
 
 section#Introduce {
+  margin-top: 100px;
+}
+
+section#Introduce .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,28 +159,32 @@ section#Introduce {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 1280px;
   margin: 0 auto;
+  max-width: 1280px;
 }
 
-section#Introduce article {
+section#Introduce .container article {
   width: 50%;
 }
 
-section#Introduce article .title {
+section#Introduce .container article .title {
   text-align: left;
   margin-bottom: 80px;
 }
 
-section#Introduce article .fl1 {
+section#Introduce .container article .fl1 {
   width: 100px;
-  left: -50px;
+  left: -35px;
   top: -40px;
   position: absolute;
   z-index: -1;
+  -webkit-transform: scale(0) rotate(100deg);
+          transform: scale(0) rotate(100deg);
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
 }
 
-section#Introduce article div {
+section#Introduce .container article div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -164,39 +197,86 @@ section#Introduce article div {
   margin-bottom: 10px;
 }
 
-section#Introduce article div strong {
+section#Introduce .container article div strong {
   margin-right: 20px;
   min-width: 40px;
 }
 
-section#Introduce article div p {
+section#Introduce .container article div p {
   font-weight: 300;
 }
 
-section#Introduce article img {
+section#Introduce .container article.textzone {
+  padding-left: 40px;
+}
+
+section#Introduce .container article img {
   position: absolute;
 }
 
-section#Introduce article img.bg {
+section#Introduce .container article img.bg {
   top: -80px;
   right: -20px;
-  width: 660px;
+  width: 100%;
+  -webkit-animation: doongsil 1.5s linear infinite alternate;
+          animation: doongsil 1.5s linear infinite alternate;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 
-section#Introduce article img.fl2 {
+section#Introduce .container article img.fl2 {
   z-index: 2;
-  width: 170px;
+  width: 25%;
   right: 50px;
-  bottom: -38px;
+  top: 65%;
 }
 
-section#Introduce article .profil {
-  width: 350px;
+@-webkit-keyframes doongsil {
+  from {
+    -webkit-transform: translate(0, 0) rotate(0);
+            transform: translate(0, 0) rotate(0);
+  }
+  to {
+    -webkit-transform: translate(-10px, 10px) rotate(5deg);
+            transform: translate(-10px, 10px) rotate(5deg);
+  }
+}
+
+@keyframes doongsil {
+  from {
+    -webkit-transform: translate(0, 0) rotate(0);
+            transform: translate(0, 0) rotate(0);
+  }
+  to {
+    -webkit-transform: translate(-10px, 10px) rotate(5deg);
+            transform: translate(-10px, 10px) rotate(5deg);
+  }
+}
+
+section#Introduce .container article .profil {
+  width: 60%;
   height: 500px;
-  background-color: white;
   position: relative;
   z-index: 1;
   margin-left: 160px;
+  opacity: 0;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+section#Introduce .container article .profil img {
+  width: 100%;
+}
+
+section#Introduce .wave {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -50%;
+  width: 100%;
+  z-index: -1;
 }
 
 section#Works {
@@ -208,46 +288,58 @@ section#Works .title {
   padding: 60px 0 80px;
 }
 
-section#Works .wave {
-  position: absolute;
-  top: -300px;
-  left: 0;
-  width: 100%;
-  z-index: -1;
+section#Works .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 30px;
+  margin: 0 auto;
 }
 
-section#Works article {
-  max-width: 1280px;
+section#Works .container > img {
+  width: 10%;
+  max-width: 80px;
+  height: 280px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+section#Works .container > img.fl1 {
+  top: 0;
+  left: -110px;
+  clip: rect(200px, 500px, 200px, 0px);
+}
+
+section#Works .container > img.fl2 {
+  margin-top: auto;
+  right: -110px;
+  clip: rect(0px, 500px, 0px, 0px);
+}
+
+section#Works .container article {
+  margin: 0 20px;
+  width: auto;
+}
+
+section#Works .container article.thumb {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  width: auto;
 }
 
-section#Works article img {
-  position: absolute;
-}
-
-section#Works article img.fl1 {
-  top: 0;
-  left: -110px;
-  width: 80px;
-}
-
-section#Works article img.fl2 {
-  bottom: 60px;
-  right: -110px;
-  width: 80px;
-}
-
-section#Works article div {
+section#Works .container article.thumb div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -262,25 +354,31 @@ section#Works article div {
       -ms-flex-align: start;
           align-items: flex-start;
   width: 30%;
-  margin-bottom: 60px;
+  min-width: 250px;
+  margin: 0 10px 60px;
 }
 
-section#Works article div figure {
+section#Works .container article.thumb div figure {
   margin-bottom: 20px;
   position: relative;
   width: 100%;
-  height: 250px;
+  height: auto;
   overflow: hidden;
   cursor: pointer;
+  opacity: 0;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
-section#Works article div figure img {
+section#Works .container article.thumb div figure img {
   width: 100%;
   height: 100%;
   position: relative;
 }
 
-section#Works article div figure figcaption {
+section#Works .container article.thumb div figure figcaption {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -299,17 +397,17 @@ section#Works article div figure figcaption {
   transition: all 0.3s;
 }
 
-section#Works article div figure:hover figcaption {
+section#Works .container article.thumb div figure:hover figcaption {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-section#Works article div span {
+section#Works .container article.thumb div span {
   font-size: 0.9rem;
   margin: 3px 0 15px;
 }
 
-section#Works article div p {
+section#Works .container article.thumb div p {
   word-break: keep-all;
 }
 
@@ -330,21 +428,30 @@ section#Contact article {
       -ms-flex-align: center;
           align-items: center;
   max-width: 1000px;
+  width: 70%;
   margin-top: 80px;
 }
 
 section#Contact article div {
   position: relative;
-  width: 200px;
+  width: 26%;
   height: 200px;
 }
 
 section#Contact article div img {
   position: absolute;
+  width: 80%;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+section#Contact article div img.icon {
+  clip: rect(0px, 0px, 200px, 0px);
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  width: 37%;
 }
 
 section#Contact article div p {
@@ -353,5 +460,173 @@ section#Contact article div p {
   font-weight: 500;
   text-align: center;
   width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  section#Introduce .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section#Introduce .container article {
+    width: 100%;
+  }
+  section#Introduce .container article .title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  section#Introduce .container article .fl1 {
+    left: 50%;
+    margin-left: -130px;
+  }
+  section#Introduce .container article div {
+    width: 440px;
+    margin: 0 auto 10px;
+  }
+  section#Introduce .container article.textzone {
+    padding-left: 0;
+  }
+  section#Introduce .container article.textzone p {
+    font-size: 16px;
+  }
+  section#Introduce .container article.imagezone {
+    margin: 50px 0;
+  }
+  section#Introduce .container article img.bg {
+    top: -50px;
+    right: 0;
+    left: 30px;
+    margin: 30px auto;
+    max-width: 480px;
+    width: 80%;
+  }
+  section#Introduce .container article img.fl2 {
+    z-index: 2;
+    right: 0;
+    left: 50%;
+    margin-left: 70px;
+    bottom: -38px;
+  }
+  section#Introduce .container article .profil {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    max-width: 280px;
+    width: 60%;
+    height: 370px;
+  }
+  section#Introduce .container article .profil img {
+    width: 100%;
+  }
+  section#Works .container {
+    padding: 0 10px;
+  }
+  section#Works .container > img {
+    width: 7%;
+    height: 170px;
+  }
+  section#Works .container article.thumb {
+    min-width: 550px !important;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  section#Main article h1 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+  section#Main img.bg1 {
+    top: -380px;
+    min-width: 470px;
+  }
+  section#Main img.bg2 {
+    left: 20px;
+    min-width: 180px;
+  }
+  section#Main img.bg3 {
+    left: 50px;
+    bottom: 130px;
+    min-width: 190px;
+  }
+  section#Main img.fl1 {
+    margin-right: 310px;
+    width: 40px;
+  }
+  section#Main img.fl2 {
+    margin: 50px 0 0 280px;
+    width: 40px;
+  }
+  section#Introduce .container article .fl1 {
+    width: 60px;
+    top: -15px;
+    margin-left: -90px;
+  }
+  section#Introduce .container article.textzone div {
+    width: 80%;
+    margin: 0 auto 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section#Introduce .container article.textzone div strong {
+    font-size: 1rem;
+  }
+  section#Introduce .container article.textzone div p {
+    font-size: 0.85rem;
+  }
+  section#Introduce .container article.imagezone .bg {
+    z-index: 1;
+  }
+  section#Introduce .container article.imagezone .profil {
+    z-index: 2;
+  }
+  section#Introduce .container article.imagezone .fl2 {
+    z-index: 3;
+  }
+  section#Works {
+    padding-top: 200px;
+  }
+  section#Works .title {
+    padding-bottom: 30px;
+  }
+  section#Works .container > img {
+    width: 11%;
+    height: 120px;
+  }
+  section#Works .container article.thumb {
+    min-width: 0px !important;
+    width: 260px;
+  }
+  section#Works .container article.thumb div {
+    margin: 0 0 30px;
+  }
+  section#Works .container article.thumb div figure {
+    margin-bottom: 10px;
+  }
+  section#Works .container article.thumb div strong {
+    font-size: 1rem;
+  }
+  section#Works .container article.thumb div span {
+    font-size: 0.8rem;
+  }
+  section#Works .container article.thumb div p {
+    font-size: 0.8rem;
+  }
+  section#Contact article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 30px;
+  }
+  section#Contact article div {
+    width: 70%;
+  }
+  section#Contact article div p {
+    bottom: -10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
