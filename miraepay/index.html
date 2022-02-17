@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="viewport" content="width=540,user-scalable=no" />
+  <meta name="apple-mobile-web-app-title" content="NAVER" />
+  <meta http-equiv="Expires" content="0" />
+  <meta http-equiv="Pragma" content="no-cache" />
+
+  <title>미래에셋페이</title>
+
+  <link rel="stylesheet" href="../common_file/css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <img src="img/bg.jpg" class="bg">
+
+    <div class="back_btn"></div>
+    <img src="img/cn_off.png" class="cn_btn">
+    <img src="img/confirm_off.png" class="confirm_btn">
+    <img src="img/join_off.png" class="join_btn">
+    
+    <input type="text" placeholder="성함을 입력해 주세요" class="name" />
+    <input type="text" placeholder="EX) 01012345678" class="tel" maxlength="11" />
+    <input type="text" disabled placeholder="인증번호를 입력해 주세요" class="number" maxlength="6"/>
+    <div class="timer"></div>
+    
+    <div class="priv_box priv1">
+      <input type="checkbox" id='priv1'/>
+      <label for="priv1" ></label>
+    </div>
+    
+    <div class="priv_box priv2">
+      <input type="checkbox" id='priv2'/>
+      <label for="priv2" ></label>
+    </div>
+    
+    <div class="priv1_btn"></div>
+    <div class="priv2_btn"></div>
+    
+    <div class="popup_wrapper">
+      <div class="popup_container">
+        <img src="" class="popup">
+        <div class="popup_close"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="../common_file/js/jquery-3.3.1.min.js"></script>
+  <script src="js/main.js"></script>
+  
+</body>
+
+</html>

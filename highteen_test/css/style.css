@@ -1,0 +1,245 @@
+#wrapper{
+	width: 540px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.bottombtn{
+	position: absolute;
+    width: 270px;
+    height: 80px;
+    bottom: 0;
+    left: 50%;
+    z-index: 1;
+    display: none;
+}
+
+.preBtn{
+	margin-left: -270px;
+}
+
+.nextBtn{
+    margin-left: 0px;
+}
+.btn_bg{
+    position: absolute;
+    top: 615px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.sub_btn{
+    position: absolute;
+    top: 615px;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 410px;
+}
+
+.sub_btn li {
+    width: 180px;
+    height: 64px;
+    float: left;
+}
+
+.sub_btn li:first-child {
+    margin-left: 20px;
+}
+
+.sub_btn li:last-child{
+    margin-left: 10px;
+}  
+
+#start_btn{
+    position: absolute;
+    bottom: 50px;
+    left: 140px;
+    z-index: 1;
+    width: 260px;
+    height: 80px;
+}
+.top_btn{
+    position: absolute;
+    width: 200px;
+    height: 69px;
+    z-index: 11;
+    display: none;
+}
+
+#top_img{
+    position: absolute;
+    top: 0px;
+    z-index: 10;
+    display: none;
+}
+
+.action{
+    position: absolute;
+}
+
+.bg{
+    position: relative !important;
+}
+.question{
+    width: 540px;
+    height: 360px;
+    position: absolute;
+    top: 254px;
+}
+.abc{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.step{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin:  0 auto;
+}
+.nav_bg{
+    background: url('../image/nav/bg1.png') no-repeat center;
+    position: absolute;
+    bottom: 60px;
+    width: 150px;
+    height: 60px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.pageNumBox{
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    top: 16px;
+    left: 4px;
+}
+.pageNum{
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+/* result */
+.resultPage{
+    background-image: url('../image/end/bg.png');
+    height: auto;
+    padding-bottom: 60px;
+}
+.resultPage > div{
+    position: relative;
+    margin-top: 60px;
+    width: 500px;
+    left: 20px;
+    overflow: hidden;
+}
+.go_url{
+    position: absolute;
+    width: 410px;
+    height: 100px;
+    bottom: 280px;
+    left: 45px;
+}
+#result_item{
+    position: absolute;
+}
+
+.item_div{
+    position: absolute;
+    width: 500px;
+    height: 320px;
+    top: 530px;
+    margin-left: 20px;
+    display: none;
+}
+.sns_wrapper{
+    position: absolute;
+    top: 160px;
+    left: 40px;
+    width: 440px;
+    height: 100px;
+    
+}
+.sns_btn{
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 0 18px;
+}
+.link_wrapper{
+    position: absolute;
+    top: 300px;
+    left: 50px;
+    width: 450px;
+    height: 50px;
+    overflow: hidden;
+}
+.link_box{
+    position: relative;
+    display: inline-block;
+    width: 280px;
+    height: 50px;
+    margin: 0;
+    top: -20px !important;
+    border: none;
+    outline: none;
+    color: #000;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 50px;
+}
+
+.link_btn{
+    position: relative;
+    display: inline-block;
+    width: 110px;
+    height: 50px;
+}
+.reset_btn{
+    width: 510px;
+    height: 105px;
+    position: absolute;
+    display: block;
+    top: 500px;
+}
+
+.shop_btn{
+    width: 220px;
+    height: 80px;
+    position: absolute;
+    z-index: 1;
+    top: 235px;
+    left: 60px;
+}
+
+
+.img_btn{
+    position: absolute;
+    top: 72px;
+    left: 450px;
+    z-index: 2;
+    display: none;
+}
+
+.swiper-container-product{
+    height: 330px;
+}
+.swiper-container-product .swiper-slide{
+    width: 330px;
+    text-align: center;
+    vertical-align: top;
+    overflow: hidden;
+}
+.prod4{
+    display: none;
+}
+/* result */
+

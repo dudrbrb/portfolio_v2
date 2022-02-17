@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=540,user-scalable=no">
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta property="og:description" content="나의 하이틴 재질 알아보기" />
+    <link rel="stylesheet" href="../common_file/css/reset.css">
+    <link rel="stylesheet" href="../common_file/css/swiper.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta property="og:image" content="https://ilotteshopping.com/highteen_test/image/thumb/0.png"/>
+
+    <title>내가 "하이틴 무비"에 출연한다면?</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="container" class="swiper-container swiper-container-main">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-no-swiping">
+                    <img class="bg" src="image/main.png" />
+                    <div id="start_btn" class="click-f " data-name="시작하기"></div>
+                </div>
+                <div class="swiper-slide" name="1"></div>
+                <div class="swiper-slide" name="2"></div>
+                <div class="swiper-slide" name="3"></div>
+                <div class="swiper-slide" name="4"></div>
+                <div class="swiper-slide" name="5"></div>
+                <div class="swiper-slide" name="6"></div>
+                <div class="swiper-slide" name="7"></div>
+                <div class="swiper-slide" name="8"></div>
+                <div class="swiper-slide" name="9"></div>
+                <div class="swiper-slide" name="10"></div>
+                
+                <div class="swiper-slide resultPage swiper-no-swiping" data-name="결과 페이지">
+                    <div id="result_top">
+                        <img src="image/end/img_save.png" class="img_btn click-f"  data-name="이미지 저장하기">
+                        <img src="" class="bg">
+                    </div>
+                    <div id="result_bot">
+                        <img src="" class="bg">
+                        <div class="go_url click-f" data-name="추천 아이템 더 보러가기"></div> 
+                    </div>
+
+                    <div id="result_ft">
+                        <img src="image/end/ft.png" class="bg">
+                        <div class="sns_wrapper">
+                            <div class="sns_btn click-f" data-name="카카오톡 공유하기" value='kakao'></div>
+                            <div class="sns_btn click-f" data-name="페이스북 공유하기" value='facebook'></div>
+                            <div class="sns_btn click-f" data-name="트위터 공유하기" value='twitter'></div>
+                        </div>
+                        <div class="link_wrapper">
+                            <input type="text" class="link_box" disabled>
+                            <div class="link_btn"></div>
+                        </div>
+
+                        <div class="reset_btn"></div>
+                    </div>
+                </div>
+            </div>
+            
+           
+        </div>
+        <div class="item_div">
+            <div class="swiper-container swiper-container-product">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="" class="prod1">
+                        <div class="shop_btn click-f" data-name="상품1 자세히보기"></div>                        
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="" class="prod2">
+                        <div class="shop_btn click-f" data-name="상품2 자세히보기"></div>                        
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="" class="prod3">
+                        <div class="shop_btn click-f" data-name="상품3 자세히보기"></div>                        
+                    </div>
+                    <div class="swiper-slide prod4">
+                        <img src="image/end/8/4.png">
+                        <div class="shop_btn click-f" data-name="상품4 자세히보기"></div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script> 
+    <script src="../common_file/js/jquery-3.3.1.min.js"></script> 
+    <script src="../common_file/js/swiper.min.js"></script>
+    <script src="../common_file/js/TweenMax.min.js"></script>
+    <script src="js/toSNS.js"></script>
+    <script src="js/makeSwipe.js"></script>
+    <script src="js/itemData.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
