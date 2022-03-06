@@ -144,13 +144,13 @@ function makeWorks(){
         },
         {
             title: '한샘 리디자인',
-            url: 'https://dudrbrb.github.io/portfolio/hanssem/',
+            url: 'https://dudrbrb.github.io/portfolio/hanssem/index.html',
             skill: 'photoshop/ html / css / fullpage',
             text: '포트폴리오 목적으로 한샘 홈페이지 리디자인 및 퍼블리싱',
         },
         {
             title: 'Cook1015',
-            url: 'https://dudrbrb.github.io/portfolio/cook1015/',
+            url: 'https://dudrbrb.github.io/portfolio/cook1015/index.html',
             skill: 'photoshop/ html / css',
             text: '포트폴리오 목적으로 cook1015 홈페이지 리디자인 및 퍼블리싱',
         }
