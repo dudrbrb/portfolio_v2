@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400&subset=korean");
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+section{
+    position: relative;
+    width: 100%;
+    top: 0;
+}
+section img{
+    position: absolute;
+}
+.ct{
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+header {
+  width: 100%;
+  height: 140px;
+  position: fixed !important;
+  top: 0;
+  background: rgb(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+header nav{
+    position: absolute;
+}
+
+.sub_nav {
+  top: 25px;
+  right: 10%;
+  font-size: 14px;
+  font-weight: 200;
+  color: rgb(221, 221, 221);
+}
+
+.main_nav ul li ,
+.sub_nav ul li {
+  float: left;
+  text-align: center;
+}
+.sub_nav ul li {
+    margin-left: 20px;
+}
+
+.main_nav ul li:hover ,
+.sub_nav ul li:hover {
+  color: #ffffff;
+}
+
+.main_nav{
+    width: 1500px;
+    height: 50px;
+    top: 70px;
+} 
+
+.main_nav li {
+  float: left;
+  padding: 0px;
+  margin: auto 12px;
+  font-size: 22px;
+  width: 180px;
+}
+
+.main_nav li{
+  color: #cccccc;
+  display: block;
+  font-weight: normal;
+  line-height: 70px;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.main_nav li ul {
+  background: rgb(0, 0, 0, 0.5);
+  position: absolute;
+  display: none; 
+  height: auto;
+  width: 180px;
+  z-index: 99;
+}
+
+/* hover시 드롭 */
+.main_nav li:hover ul {
+  display: block; 
+}
+
+.main_nav li li {
+  margin: 0px;
+  padding: 0px;
+}
+
+.main_nav ul li img{
+  margin-top: -60px;
+  width: 150px;
+
+}
+/* contents */
+.top{
+    height: 100vh;
+    background: url('../img/bg1.png') center no-repeat;
+    background-attachment: fixed;
+}
+.top img{
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left:450px;
+}
+
+.copy1{
+    background: url('../img/bg2.png') center no-repeat;
+    height: 500px;
+}
+.copy1 img{
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.social_box {
+    width: 1300px;
+}
+.copy2{
+    background: url('../img/bg3.png') center no-repeat;
+    height: 800px;
+}
+.copy2 img{
+    top: 500px;
+}
+
+.kids_food{
+    background: url('../img/bg4.png') center no-repeat;
+    height: 940px;
+}
+.kids_food img{
+    top: 150px;
+    left: 200px;
+}
+.kids_food p{
+    position: absolute;
+    font-size: 20px;
+    line-height: 40px;
+    top: 190px;
+    left: 570px;
+}
+.swiper-container{
+    position: absolute;
+    top: 370px;
+    right: 0;
+    width: 80%;
+    height: 600px;
+}
+.swiper-slide{
+    width: 500px !important;
+}
+.swiper-slide img{
+    width: 420px;
+    top: 0;
+    left: 0;
+}
+.social{
+    height: 900px;
+}
+.social > img{
+    position: relative;
+    display: block;
+    top: 40px;
+    left: 8%;
+}
+.social_box{
+    margin-top: 40px;
+}
+.social_box li{
+    display: inline-block;
+    position: relative;
+    width: 304px;
+    height: 304px;
+    margin: 10px;
+    border: 2px solid (0, 0, 0, 0.2);
+    box-shadow: 0px 0px 4px 2px #5252527c;
+    overflow: hidden;
+}
+
+.plus{
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  text-align: center;
+  font-size: 140px;
+  line-height: 304px;
+  top: 140px;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+
+.thumb{
+    width: 100%;
+    height: 100%;
+}
+
+
+.social_box li:hover .plus {
+  opacity: 1;
+  transform: translateY(-140px);
+}
+
+footer{
+    position: relative;
+    height: 300px;
+    background: #f0f0f0;
+}
+footer img, footer div{
+    display: inline-block;
+    position: absolute;
+}
+footer img{
+    top: 70px;
+    left: 300px;
+}
+
+footer div{
+    top: 80px;
+    left: 600px;
+}
+footer span{
+    font-weight: 600;
+    line-height: 50px;
+}
+footer p{
+    line-height: 24px;
+}

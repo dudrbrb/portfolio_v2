@@ -363,6 +363,7 @@ section#Works .container article.thumb div figure {
   position: relative;
   width: 100%;
   height: auto;
+  max-height: 245px;
   overflow: hidden;
   cursor: pointer;
   opacity: 0;
